@@ -1,4 +1,4 @@
-docker-fsharp
+fsharp-docker
 =============
 
 This repository contains the sources for the following [docker](http://www.docker.io) base images:
@@ -8,4 +8,13 @@ This repository contains the sources for the following [docker](http://www.docke
 * [`icecrime/fsharp-hello`](http://github.com/icecrime/fsharp-docker/blob/master/hello)
 
 The repository layout is shamelessly inspired from [`GoogleCloudPlatform/python-docker`](https://github.com/GoogleCloudPlatform/python-docker) by @Proppy.
+
+Usage
+----
+
+    $> docker build -t icecrime/fsharp base/
+    $> docker build -t icecrime/fsharp-runtime runtime/
+    $> docker build -t icecrime/fsharp-hello hello/
+    $> docker run --rm icecrime/fsharp-hello
+    Hello world from F#!
 
